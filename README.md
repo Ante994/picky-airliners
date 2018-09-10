@@ -9,11 +9,3 @@ Your task is to write a Redis script in Lua that takes an airplane ID as an argu
 a random available parking spot to the plane if it doesn't have one yet. It should always return
 the parking spot ID (even if it was assigned earlier). And don't worry about multiple airports, we will have a separate Redis instance running with this script at each airport.
 
-
-•	redis skripta u lua jeziku
-•	aviona ima 80 (ID od 1 do 80
-•	parking mjesta 100 (ID 1 do 99)
-•	funkcija prima argument (airplaneID) i pridruzuje random slobodno mjesto avionu:
-o	ako avion vec ima tada vrati njegov postojeci parkingID
-o	ako avion nije imao parking, postavi ga i vrati parkingID
-o	jednom postavljne parkingID za avion vise se nemoze mijenjati
